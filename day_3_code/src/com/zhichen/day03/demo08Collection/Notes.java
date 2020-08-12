@@ -15,6 +15,12 @@ import java.util.Collections;
  *      public static void shuffle(List<?> list)  打乱集合元素的顺序
  *
  *      public static <T> void sort(List<T> list)  将集合中元素按照默认规则排序  （默认升序）
+ *
+ * 自定义类型集合要使用sort方法，必须实现Comparable接口，重写compareTo方法，指定排序规则
+ *
+ *      还有一种sort方法
+ *      public static <T> void sort(List<T> list, Comparator<? super T>) 将集合种元素按照指定规则排序
+ *      Comparator相当于传入一个第三方的裁判，作为参数
  */
 public class Notes {
     public static void main(String[] args) {
